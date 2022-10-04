@@ -1,0 +1,15 @@
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\bin\Debug\net6.0\lab03.exe
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\bin\Debug\net6.0\lab03.deps.json
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\bin\Debug\net6.0\lab03.runtimeconfig.json
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\bin\Debug\net6.0\lab03.dll
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\bin\Debug\net6.0\lab03.pdb
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\obj\Debug\net6.0\lab03.csproj.AssemblyReference.cache
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\obj\Debug\net6.0\lab03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\obj\Debug\net6.0\lab03.AssemblyInfoInputs.cache
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\obj\Debug\net6.0\lab03.AssemblyInfo.cs
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\obj\Debug\net6.0\lab03.csproj.CoreCompileInputs.cache
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\obj\Debug\net6.0\lab03.dll
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\obj\Debug\net6.0\refint\lab03.dll
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\obj\Debug\net6.0\lab03.pdb
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\obj\Debug\net6.0\lab03.genruntimeconfig.cache
+C:\Users\noname\Desktop\123\OOP\lab03\lab03\obj\Debug\net6.0\ref\lab03.dll
