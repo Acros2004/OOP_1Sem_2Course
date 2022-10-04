@@ -154,14 +154,34 @@ namespace lab03
         public class Developer
         {
             int _id;
+            public int Id
+            {
+                get { return _id; }
+                set { _id = value; }
+            }
             string _nameOfDeveloper;
+
+            public string NameOfDeveloper
+            {
+                get { return _nameOfDeveloper; }
+                set { _nameOfDeveloper = value; }
+            }
             string _otdel;
+
+            public string OTdel
+            {
+                get { return _otdel; }
+                set
+                {
+                    _otdel = value;
+                }
+            }
             public Developer(int id, string name, string otdel)
             {
 
                 _id = id;
                 _nameOfDeveloper = name;
-                otdel = _otdel;
+                _otdel = otdel;
             }
         }
     }
