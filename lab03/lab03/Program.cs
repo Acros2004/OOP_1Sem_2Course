@@ -61,7 +61,7 @@ namespace lab03
             Console.WriteLine(StaticOperations.ListString(list1));
             Console.WriteLine("Самая длинная строка в списке 3" + StaticOperations.LongestInfo(list3));
 
-            string str = "mY NaMe Is KaTe";
+            string str = "mY NaMe Is NiKiTa";
             Console.WriteLine(str + " изменено: " + StaticOperations.FormatText(str));
             Console.ReadKey();
         }

@@ -8,7 +8,7 @@ namespace lab03
 {
     class List
     {
-
+        Production primer = new Production();
         Node tail;
         Node head;
         int length;
@@ -118,6 +118,26 @@ namespace lab03
                 list1.length++;
             }
             return list1;
+        }
+        class Production
+        {
+            int id;
+            string _name;
+            public int ID
+            {
+                get { return id; }
+                set { id = value; }
+            } 
+            public string Name
+            {
+                get { return _name; }
+                set { _name = value; }
+            }
+            public Production()
+            {
+                id = 1;
+                _name = "БГТУ";
+            }
         }
     }
 }
