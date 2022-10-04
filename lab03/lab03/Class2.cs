@@ -34,6 +34,17 @@ namespace lab03
             }
             return count;
         }
+        public static string getSumString(List list)
+        {
+            string str = "";
+            Node curr = list.Head;
+            while (curr != null)
+            {
+                str = str + curr.Info;
+                curr = curr.Next;
+            }
+            return str;
+        }
         public static string ListString(List list)
         {
             string str = "";
@@ -45,19 +56,27 @@ namespace lab03
             }
             return str;
         }
-        public static string LongestInfo(List list)
+        public static int LongestInfo(List list)
         {
             Node curr = list.Head;
             string str = curr.Info;
+            string str2 = curr.Info;
             while (curr != null)
             {
                 if (curr.Info.Length > str.Length)
                 {
                     str = curr.Info;
                 }
+                else
+                {
+                    str2 =curr.Info;
+                }
                 curr = curr.Next;
             }
-            return str;
+            int a = str.Length;
+            int b = str2.Length;
+            a -= b;
+            return a;
         }
         public static string FormatText(this string str)
         {

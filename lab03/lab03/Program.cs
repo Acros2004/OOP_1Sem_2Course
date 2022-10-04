@@ -58,11 +58,12 @@ namespace lab03
             Console.WriteLine("Повторяющиеся элементы в списке 2 = " + list2.CheckRepeatings());
             Console.WriteLine("Количество элементов списка 3 =  " + StaticOperations.Count(list3));
             Console.WriteLine(StaticOperations.ListString(list3));
-            Console.WriteLine(StaticOperations.ListString(list1));
-            Console.WriteLine("Самая длинная строка в списке 3" + StaticOperations.LongestInfo(list3));
+            Console.WriteLine("Сумма(слияние) элементов списка 1 "+StaticOperations.getSumString(list1));
+            Console.WriteLine("Разница в количестве символов большего и меньшего элемента в списке 3: " + StaticOperations.LongestInfo(list3));
 
             string str = "mY NaMe Is NiKiTa";
             Console.WriteLine(str + " изменено: " + StaticOperations.FormatText(str));
+            List.Developer person = new List.Developer(123, "Nikita", "BSTU");
             Console.ReadKey();
         }
 

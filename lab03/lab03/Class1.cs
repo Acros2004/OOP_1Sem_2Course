@@ -8,7 +8,6 @@ namespace lab03
 {
     class List
     {
-        Production primer = new Production();
         Node tail;
         Node head;
         int length;
@@ -119,24 +118,50 @@ namespace lab03
             }
             return list1;
         }
-        class Production
+        Production Product = new Production(199, "БЕЛАЗ"); // вложенный объект
+        class Production //вложенные классы
         {
-            int id;
-            string _name;
-            public int ID
+            public Production(int id, string nameOfOrganization)
             {
-                get { return id; }
-                set { id = value; }
-            } 
-            public string Name
-            {
-                get { return _name; }
-                set { _name = value; }
+                _id = id;
+                _nameOfOrganization = nameOfOrganization;
             }
-            public Production()
+            public int Id
             {
-                id = 1;
-                _name = "БГТУ";
+                get
+                {
+                    return _id;
+                }
+                set
+                {
+                    _id = value;
+                }
+            }
+            public string NameOfOrganization
+            {
+                get
+                {
+                    return _nameOfOrganization;
+                }
+                set
+                {
+                    _nameOfOrganization = value;
+                }
+            }
+            private int _id;
+            private string _nameOfOrganization;
+        }
+        public class Developer
+        {
+            int _id;
+            string _nameOfDeveloper;
+            string _otdel;
+            public Developer(int id, string name, string otdel)
+            {
+
+                _id = id;
+                _nameOfDeveloper = name;
+                otdel = _otdel;
             }
         }
     }
