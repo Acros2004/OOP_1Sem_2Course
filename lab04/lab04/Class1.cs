@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace lab04
 {
-    
+    class DATA
+    {
+        public string Date
+        {
+            get;
+            set;
+        }
+        public DATA(string date)
+        {
+            Date = date;
+        }
+    }
+
     interface MyOrganization
     {
         bool SignDoc();
@@ -16,14 +28,13 @@ namespace lab04
     }
     abstract class Document
     {
-        string _data = string.Empty;
+        DATA date;
         bool official = false;
         bool signed = false;
 
-        public string Data
+        public string Date
         {
-            get { return _data; }
-            set { _data = value; }
+            get { return date.Date; }
         }
 
         public bool Signed
@@ -39,11 +50,11 @@ namespace lab04
         
         public Document(string data)
         {
-            Data = data;
+            this.date = new DATA(data);
         }
         public virtual void ShowInfo()
         {
-            Console.WriteLine($"\nДата: {Data}\nПодпись: {signed}\nОфициальный документ: {official}");
+            Console.WriteLine($"\nДата: {date.Date}\nПодпись: {signed}\nОфициальный документ: {official}");
         }
         public override string ToString()
         {
@@ -130,7 +141,7 @@ namespace lab04
         }
         public override string ToString()
         {
-            Console.WriteLine($"\tКвитанция");
+            Console.WriteLine($"\tНакладная");
             Console.WriteLine($"Организация: {Organization}\nКоличество продуктов: {AmountProduct}\nСумма к оплате: {Sum}");
             return "\0";
         }

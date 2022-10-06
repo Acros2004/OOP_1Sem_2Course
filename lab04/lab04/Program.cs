@@ -36,7 +36,12 @@ namespace lab04
             Naklad nakl = docNaklad as Naklad;
             Document[] docs = { Kvit, check, nakl };
             Printer printer = new Printer();
-            
+            Console.WriteLine("Вызываем метод класса Printer:");
+            foreach (var item in docs)
+            {
+                printer.IAmPrinting(item);
+                Console.WriteLine();
+            }
             Console.ReadKey();
         }
     }
