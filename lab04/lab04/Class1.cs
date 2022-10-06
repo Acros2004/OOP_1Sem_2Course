@@ -6,29 +6,25 @@ using System.Threading.Tasks;
 
 namespace lab04
 {
-    class Data
-    {
-        public int Date
-        {
-            get;
-            set;
-        }
-        public Data(int data)
-        {
-            Date = data;
-        }
-    }
+    
     interface MyOrganization
     {
         bool SignDoc();
+        bool OfficialDocument();
         void ShowInfo();
         string ToString();
     }
     abstract class Document
     {
-        Data data;
+        string _data = string.Empty;
         bool official = false;
         bool signed = false;
+
+        public string Data
+        {
+            get { return _data; }
+            set { _data = value; }
+        }
 
         public bool Signed
         {
@@ -41,13 +37,13 @@ namespace lab04
             set { official = value; }
         }
         
-        public Document(int data)
+        public Document(string data)
         {
-            this.data = new Data(data);
+            Data = data;
         }
         public virtual void ShowInfo()
         {
-            Console.WriteLine($"\nДата: {data.Date}\nПодпись: {signed}\nОфициальный документ: {official}");
+            Console.WriteLine($"\nДата: {Data}\nПодпись: {signed}\nОфициальный документ: {official}");
         }
         public override string ToString()
         {
@@ -68,7 +64,7 @@ namespace lab04
             get { return amountServicesUses; }
             set { amountServicesUses = value; }
         }
-        public Kvitancia(int _amountServicesUses,int _sum,int data) : base(data)
+        public Kvitancia(int _amountServicesUses,int _sum,string data) : base(data)
         {
             Sum= _sum;
             AmountServicesUses = _amountServicesUses;
@@ -77,15 +73,19 @@ namespace lab04
         {
             return Signed = true;
         }
+        public bool OfficialDocument()
+        {
+            return Official = true;
+        }
         public override void ShowInfo()
         {
             base.ShowInfo();
-            Console.WriteLine("Количество использованных коммунальных услуг: " + AmountServicesUses);
-            Console.WriteLine("Сумма к оплате: " + Sum);
         }
         public override string ToString()
         {
             Console.WriteLine($"\tКвитанция");
+            Console.WriteLine("Количество использованных коммунальных услуг: " + AmountServicesUses);
+            Console.WriteLine("Сумма к оплате: " + Sum);
             return "\0";
         }
     }
@@ -110,7 +110,7 @@ namespace lab04
             get { return _organization; }
             set { _organization = value; }
         }
-        public Naklad(int data, string organization,int amountProduct,int sum) : base(data)
+        public Naklad(string data, string organization,int amountProduct,int sum) : base(data)
         {
             Organization = organization;
             AmountProduct = amountProduct;
@@ -120,32 +120,36 @@ namespace lab04
         {
             return Signed = true;
         }
+        public bool OfficialDocument()
+        {
+            return Official = true;
+        }
         public override void ShowInfo()
         {
             base.ShowInfo();
-            Console.WriteLine($"Организация: {Organization}\nКоличество продуктов: {AmountProduct}\nСумма к оплате: {Sum}");
         }
         public override string ToString()
         {
             Console.WriteLine($"\tКвитанция");
+            Console.WriteLine($"Организация: {Organization}\nКоличество продуктов: {AmountProduct}\nСумма к оплате: {Sum}");
             return "\0";
         }
     }
     class Check : Document, MyOrganization
     {
         public int _sum = 0;
-        public int _cardNumber = 0;
+        public long _cardNumber = 0;
         public int Sum
         {
             get { return _sum; }
             set { _sum = value; }
         }
-        public int CardNumber
+        public long CardNumber
         {
             get { return _cardNumber; }
             set { _cardNumber = value; }
         }
-        public Check(int date, int sum,int _cardNumber) : base(date)
+        public Check(string date, int sum,long _cardNumber) : base(date)
         {
             Sum = sum;
             CardNumber = _cardNumber;
@@ -154,15 +158,27 @@ namespace lab04
         {
             return Signed = false;
         }
+        public bool OfficialDocument()
+        {
+            return Official = true;
+        }
         public override void ShowInfo()
         {
             base.ShowInfo();
-            Console.WriteLine($"Сумма перевода на карту {CardNumber} составляет {Sum} рублей");
-        }
+         }
         public override string ToString()
         {
             Console.WriteLine("\tЧек");
+            Console.WriteLine($"Сумма перевода на карту {CardNumber} составляет {Sum} рублей");
             return "\0";
+        }
+    }
+    class Printer
+    {
+        public virtual void IAmPrinting(Document doc)
+        {
+            Console.WriteLine($"\t{doc.GetType().Name}");
+            doc.ToString();
         }
     }
 }
