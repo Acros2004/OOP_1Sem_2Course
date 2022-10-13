@@ -105,6 +105,7 @@ namespace lab04
         public string _organization;
         public int amountProduct = 0;
         public int _sum = 0;
+        public string products;
 
         public int Sum
         {
@@ -121,8 +122,15 @@ namespace lab04
             get { return _organization; }
             set { _organization = value; }
         }
-        public Naklad(string data, string organization, int amountProduct, int sum) : base(data)
+        public string Products
         {
+            get { return products; }
+            set { products = value; }
+        }
+
+        public Naklad(string data, string organization, string products, int sum) : base(data)
+        {
+            Products = products;
             Organization = organization;
             AmountProduct = amountProduct;
             Sum = sum;
