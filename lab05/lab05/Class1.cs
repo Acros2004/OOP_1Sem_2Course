@@ -47,7 +47,7 @@ namespace lab04
             get { return official; }
             set { official = value; }
         }
-        
+
         public Document(string data)
         {
             this.date = new DATA(data);
@@ -75,7 +75,7 @@ namespace lab04
             get { return amountServicesUses; }
             set { amountServicesUses = value; }
         }
-        public Kvitancia(int _amountServicesUses,int _sum,string data) : base(data)
+        public Kvitancia(int _amountServicesUses, int _sum, string data) : base(data)
         {
             Sum = _sum;
             AmountServicesUses = _amountServicesUses;
@@ -121,7 +121,7 @@ namespace lab04
             get { return _organization; }
             set { _organization = value; }
         }
-        public Naklad(string data, string organization,int amountProduct,int sum) : base(data)
+        public Naklad(string data, string organization, int amountProduct, int sum) : base(data)
         {
             Organization = organization;
             AmountProduct = amountProduct;
@@ -160,7 +160,7 @@ namespace lab04
             get { return _cardNumber; }
             set { _cardNumber = value; }
         }
-        public Check(string date, int sum,long _cardNumber) : base(date)
+        public Check(string date, int sum, long _cardNumber) : base(date)
         {
             Sum = sum;
             CardNumber = _cardNumber;
@@ -176,7 +176,7 @@ namespace lab04
         public override void ShowInfo()
         {
             base.ShowInfo();
-         }
+        }
         public override string ToString()
         {
             Console.WriteLine("\tЧек");
