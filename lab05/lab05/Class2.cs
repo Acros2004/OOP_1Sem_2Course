@@ -6,6 +6,28 @@ using System.Threading.Tasks;
 
 namespace lab04
 {
+    
+    partial class Naklad
+    {
+        
+        public override void getOfficial()
+        {
+            base.getOfficial();
+        }
+       
+        public override void ShowInfo()
+        {
+            base.ShowInfo();
+        }
+        public override string ToString()
+        {
+            Console.WriteLine($"\tНакладная");
+            Console.WriteLine($"Организация: {Organization}\nПродукты и их цена: {Products}\nСумма к оплате: {Sum}");
+            base.ShowInfo();
+
+            return "\0";
+        }
+    }
     class Bygalteria : System.Collections.IEnumerable
     {
         private readonly List<Document> ListDocument;
@@ -46,7 +68,7 @@ namespace lab04
             return ListDocument.GetEnumerator();
         }
     }
-    class СontrollerByx
+    class Controller
     {
         public static int Nakladsum(Bygalteria ListDocument,string nameOfProduct)
         {
@@ -59,7 +81,7 @@ namespace lab04
                     int pos = kvit.Products.IndexOf(nameOfProduct);
                     if( pos != -1)
                     {
-                        string text = kvit.Products.Remove(0, pos + 1);
+                        string text = kvit.Products.Remove(0, pos);
                         string[] parts = text.Split(new char[] { ' ' });
                         sum += Int32.Parse(parts[1]);
                     }
@@ -67,7 +89,7 @@ namespace lab04
             }
             return sum;
         }
-        public static int NumberOfCheks(Bygalteria ListDOC)
+        public static int ShowAmountOfCheks(Bygalteria ListDOC)
         {
             int sum = 0;
             foreach (var i in ListDOC)
@@ -79,9 +101,36 @@ namespace lab04
             }
             return sum;
         }
-        public static void ShowDocDate(Bygalteria ListDocument)
+        public static void ShowDocDate(Bygalteria ListDocument,string begin, string end)
         {
-            
+            string[] period = { begin, end };
+            int[] days = new int[3];
+            int[] months = new int[3];
+            int[] years = new int[3];
+            int col = 0;
+            foreach (string i in period)
+            {
+                string[] parts1 = i.Split(new char[] { '.' });
+                days[col] = Int32.Parse(parts1[0]);
+                months[col] = Int32.Parse(parts1[1]);
+                years[col] = Int32.Parse(parts1[2]);
+                col++;
+            }
+            foreach (var i in ListDocument)
+            {
+                Document document = (Document)i;
+                string[] parts = document.Date.Split(new char[] { '.' });
+                days[col] = Int32.Parse(parts[0]);
+                months[col] = Int32.Parse(parts[1]);
+                years[col] = Int32.Parse(parts[2]);
+                if ((years[0] < years[2]) || ((years[0] == years[2]) && (months[0] < months[2])) || ((years[0] == years[2]) && (months[0] == months[2]) && (days[0] < days[2])))
+                {
+                    if ((years[2] < years[1]) || ((years[2] == years[1]) && (months[2] < months[1])) || ((years[2] == years[1]) && (months[2] == months[1]) && (days[2] < days[1])))
+                    {
+                        document.ShowInfo();
+                    }
+                }
+            }
         }
        
     }

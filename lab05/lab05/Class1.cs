@@ -22,14 +22,48 @@ namespace lab04
     interface MyOrganization
     {
         bool SignDoc();
-        bool OfficialDocument();
         void ShowInfo();
         string ToString();
     }
     abstract class Document
     {
+        Prov officialDoc = new Prov();
+
+        enum Operation
+        {
+            official,
+            unofficial
+        }
+        struct Prov
+        {
+            public Prov()
+            {
+                _oficial = Operation.unofficial;
+            }
+            public Operation _oficial;
+            public Operation Official
+            {
+                get { return _oficial; }
+                set { _oficial = value; }
+            }
+            
+            public bool GetName()
+            {
+                if(_oficial == Operation.unofficial)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+        }
+        public virtual void getOfficial()
+        {
+            officialDoc.Official = Operation.official;
+        }
         DATA date;
-        bool official = false;
         bool signed = false;
 
         public string Date
@@ -42,19 +76,14 @@ namespace lab04
             get { return signed; }
             set { signed = value; }
         }
-        public bool Official
-        {
-            get { return official; }
-            set { official = value; }
-        }
-
+       
         public Document(string data)
         {
             this.date = new DATA(data);
         }
         public virtual void ShowInfo()
         {
-            Console.WriteLine($"\nДата: {date.Date}\nПодпись: {signed}\nОфициальный документ: {official}");
+            Console.WriteLine($"\nДата: {date.Date}\nПодпись: {signed}\nОфициальный: {officialDoc.GetName()}");
         }
         public override string ToString()
         {
@@ -63,6 +92,10 @@ namespace lab04
     }
     sealed class Kvitancia : Document, MyOrganization
     {
+        public override void getOfficial()
+        {
+            base.getOfficial();
+        }
         public int amountServicesUses = 0;
         public int sum = 0;
         public int Sum
@@ -84,10 +117,6 @@ namespace lab04
         {
             return Signed = true;
         }
-        public bool OfficialDocument()
-        {
-            return Official = true;
-        }
         public override void ShowInfo()
         {
             base.ShowInfo();
@@ -97,10 +126,11 @@ namespace lab04
             Console.WriteLine($"\tКвитанция");
             Console.WriteLine("Количество использованных коммунальных услуг: " + AmountServicesUses);
             Console.WriteLine("Сумма к оплате: " + Sum);
+            base.ShowInfo();
             return "\0";
         }
     }
-    class Naklad : Document, MyOrganization
+    partial class Naklad : Document, MyOrganization
     {
         public string _organization;
         public int amountProduct = 0;
@@ -132,30 +162,21 @@ namespace lab04
         {
             Products = products;
             Organization = organization;
-            AmountProduct = amountProduct;
             Sum = sum;
         }
         public bool SignDoc()
         {
             return Signed = true;
         }
-        public bool OfficialDocument()
-        {
-            return Official = true;
-        }
-        public override void ShowInfo()
-        {
-            base.ShowInfo();
-        }
-        public override string ToString()
-        {
-            Console.WriteLine($"\tНакладная");
-            Console.WriteLine($"Организация: {Organization}\nКоличество продуктов: {AmountProduct}\nСумма к оплате: {Sum}");
-            return "\0";
-        }
+        
+        
     }
     class Check : Document, MyOrganization
     {
+        public override void getOfficial()
+        {
+            base.getOfficial();
+        }
         public int _sum = 0;
         public long _cardNumber = 0;
         public int Sum
@@ -177,10 +198,7 @@ namespace lab04
         {
             return Signed = false;
         }
-        public bool OfficialDocument()
-        {
-            return Official = true;
-        }
+
         public override void ShowInfo()
         {
             base.ShowInfo();
@@ -189,6 +207,7 @@ namespace lab04
         {
             Console.WriteLine("\tЧек");
             Console.WriteLine($"Сумма перевода на карту {CardNumber} составляет {Sum} рублей");
+            base.ShowInfo();
             return "\0";
         }
     }
