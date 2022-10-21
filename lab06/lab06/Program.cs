@@ -65,10 +65,10 @@ namespace lab04
             Bygalteria container = new Bygalteria();
             Controller.ReadFile(container, @"C:\Users\noname\Desktop\123\OOP\lab05\test.txt");
             container.Show();
-
+           
             try
             {
-                int testpr = 0;
+                int testpr = -1;
                 Logger logger = new Logger();
                 logger.FileLoggerWriteLine("Log-файл успесно создан");
                 try
@@ -76,16 +76,19 @@ namespace lab04
                     Bygalteria test1 = new Bygalteria();
                     //test1.Show();
                     //test1.removeDoc(1);
-                    Check doc3 = new Check("12.11.2003", 123, 123556);
-                    for (int i = 0; i < 12; i++)
-                    {
-                        test1.addDoc(doc3);
-                    }
-                    documents[13].ToString();
+                    //Check doc3 = new Check("12.11.2003", 123, 123556);
+                    //for (int i = 0; i < 12; i++)
+                    //{
+                    //    test1.addDoc(doc3);
+                    //}
+                    //documents[13].ToString();
 
-                    int test3 = 0;
-                    test3 /= 0;
+                    //int test3 = 0;
+                    //test3 /= 0;
+                    //Debugger.Launch();
+                    Debug.Assert(testpr <= 1 && testpr >= 0, "Значение testpr может быть только 0 или 1");
                 }
+                 
                 catch (DivideByZeroException exception) when (testpr != 1)
                 {
                     logger.FileLoggerWriteError("Error NullReferenceException", exception.Message, exception.StackTrace);
@@ -94,6 +97,7 @@ namespace lab04
                 catch (DivideByZeroException)
                 {
                     Console.WriteLine("Попытка поднлить на ноль");
+                    
                 }
                 catch (NullCollectionException exception)
                 {
@@ -130,8 +134,7 @@ namespace lab04
             {
                 Console.WriteLine("Тест закончился");
             }
-
-
+          
             Console.ReadKey();
         }
     }

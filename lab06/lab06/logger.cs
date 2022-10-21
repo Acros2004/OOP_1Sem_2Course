@@ -11,7 +11,7 @@ namespace lab04
         string TimeLog { get; set; }
         public void FileLoggerWriteLine(string message)
         {
-            using StreamWriter streamWriter = new StreamWriter("log.txt", false);
+            using StreamWriter streamWriter = new StreamWriter("C:\\Users\\noname\\Desktop\\123\\OOP\\lab06\\lab06\\log.txt", false);
             streamWriter.WriteLine("<-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><->");
             streamWriter.WriteLine(message);
             streamWriter.WriteLine("<-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><->");
@@ -19,7 +19,7 @@ namespace lab04
         }
         public void FileLoggerWriteError(string TypeLog, string Message, string ObjLog)
         {
-            using StreamWriter streamWriter = new StreamWriter("log.txt", true);
+            using StreamWriter streamWriter = new StreamWriter("C:\\Users\\noname\\Desktop\\123\\OOP\\lab06\\lab06\\log.txt", true);
             streamWriter.WriteLine("<-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><->");
             streamWriter.WriteLine();
             streamWriter.Write("Тип: ");
