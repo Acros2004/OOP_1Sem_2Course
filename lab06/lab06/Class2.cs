@@ -8,15 +8,15 @@ using System.Text.Json;
 
 namespace lab04
 {
-    
+
     partial class Naklad
     {
-        
+
         public override void getOfficial()
         {
             base.getOfficial();
         }
-       
+
         public override void ShowInfo()
         {
             base.ShowInfo();
@@ -46,7 +46,7 @@ namespace lab04
         {
             ListDocument.Add(obj);
         }
-        
+
         public bool removeDoc(int position)
         {
             if (position < ListDocument.Count)
@@ -73,7 +73,7 @@ namespace lab04
     }
     class Controller
     {
-        
+
         public static void ReadFile(Bygalteria collection, string patch)
         {
             string[] textFile = System.IO.File.ReadAllLines(patch);
@@ -89,9 +89,9 @@ namespace lab04
                         break;
                     case "Naklad":
                         string provString = textFile[i];
-                        for(int j = 0; j < 4; j++)
+                        for (int j = 0; j < 4; j++)
                         {
-                            provString = provString.Replace(dwordLine[j],"");
+                            provString = provString.Replace(dwordLine[j], "");
                         }
                         collection.addDoc(new Naklad(dwordLine[1], dwordLine[2], provString, Convert.ToInt32(dwordLine[3])));
                         break;
@@ -101,7 +101,7 @@ namespace lab04
                 }
             }
         }
-        public static int Nakladsum(Bygalteria ListDocument,string nameOfProduct)
+        public static int Nakladsum(Bygalteria ListDocument, string nameOfProduct)
         {
             int sum = 0;
             foreach (var i in ListDocument)
@@ -110,7 +110,7 @@ namespace lab04
                 {
                     Naklad kvit = (Naklad)i;
                     int pos = kvit.Products.IndexOf(nameOfProduct);
-                    if( pos != -1)
+                    if (pos != -1)
                     {
                         string text = kvit.Products.Remove(0, pos);
                         string[] parts = text.Split(new char[] { ' ' });
@@ -132,7 +132,7 @@ namespace lab04
             }
             return sum;
         }
-        public static void ShowDocDate(Bygalteria ListDocument,string begin, string end)
+        public static void ShowDocDate(Bygalteria ListDocument, string begin, string end)
         {
             string[] period = { begin, end };
             int[] days = new int[3];
@@ -163,6 +163,6 @@ namespace lab04
                 }
             }
         }
-       
+
     }
 }
