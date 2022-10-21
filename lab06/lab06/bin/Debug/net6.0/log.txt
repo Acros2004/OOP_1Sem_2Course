@@ -1,0 +1,13 @@
+<-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><->
+Log-файл успесно создан
+<-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><->
+
+<-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><->
+
+Тип: Error Class MaxCollection
+Время: 21.10.2022 5:25:38
+Сообщение: Превышен размер коллекции
+Объект:    at lab04.Bygalteria.addDoc(Document obj) in C:\Users\noname\Desktop\123\OOP\lab06\lab06\Class2.cs:line 53
+   at lab04.Program.Main(String[] args) in C:\Users\noname\Desktop\123\OOP\lab06\lab06\Program.cs:line 82
+
+<-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><->

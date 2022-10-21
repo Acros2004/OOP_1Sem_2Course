@@ -44,21 +44,34 @@ namespace lab04
         }
         public void addDoc(Document obj)
         {
-            ListDocument.Add(obj);
+            if(ListDocument.Count < 10)
+            {
+                ListDocument.Add(obj);
+            }
+            else
+            {
+                throw new MaxCollection("Превышен размер коллекции");
+            }
         }
 
-        public bool removeDoc(int position)
+        public void removeDoc(int position)
         {
             if (position < ListDocument.Count)
             {
                 Console.WriteLine($"Элемент {position} удалён");
                 ListDocument.RemoveAt(position);
-                return true;
             }
-            else return false;
+            else
+            {
+                throw new DeleteNullObject("Вы пытаетесь удалить элемент которого не существует");
+            }
         }
         public void Show()
         {
+            if (ListDocument.Count == 0)
+            {
+                throw new NullCollectionException("Коллекция пустая, вы не можете вызвать данный метод");
+            }
             Console.WriteLine("============СПИСОК============");
             foreach (Document obj in ListDocument)
             {
@@ -80,9 +93,7 @@ namespace lab04
             for (int i = 0; i < textFile.Length; i++)
             {
                 string[] dwordLine = textFile[i].Split(' ');
-                // имя цена масса объём
-                //collection.addDoc(new Component(Convert.ToDouble(dwordLine[3]), Convert.ToDouble(dwordLine[2]), Convert.ToInt32(dwordLine[1]), dwordLine[0]));
-                switch (dwordLine[0])
+               switch (dwordLine[0])
                 {
                     case "Kvitancia":
                         collection.addDoc(new Kvitancia(Convert.ToInt32(dwordLine[1]), Convert.ToInt32(dwordLine[2]), dwordLine[3]));

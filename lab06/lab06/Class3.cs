@@ -7,35 +7,20 @@ using System.Diagnostics;
 
 namespace lab04
 {
-    public class Nalog : Exception
+    class NullCollectionException : Exception
     {
-        private string message;
-        public Nalog()
-        {
-            message = "\nБольшой налог";
-        }
-        public void PrintInfo()
-        {
-            Console.WriteLine(message);
-        }
+        public NullCollectionException(string message) : base(message) { }
     }
-    public class SUM : Exception
+    class MaxCollection : OverflowException
     {
-        private string message;
-        public SUM(string message)
-        {
-            this.message = message;
-        }
-        public void PrintInfo()
-        {
-            Console.WriteLine(message);
-        }
+        public MaxCollection(string message) : base(message) { }
     }
-    public class Dolges : Exception
+    class DeleteNullObject : Exception
     {
-        public void PrintInfo()
-        {
-            Console.WriteLine("ТЫ ДОЛЖНИК");
-        }
+        public DeleteNullObject(string message) : base(message) { }
+    }
+    class TestNullClass : NullReferenceException
+    {
+        public TestNullClass(string message) : base(message) { }
     }
 }

@@ -66,6 +66,72 @@ namespace lab04
             Controller.ReadFile(container, @"C:\Users\noname\Desktop\123\OOP\lab05\test.txt");
             container.Show();
 
+            try
+            {
+                int testpr = 0;
+                Logger logger = new Logger();
+                logger.FileLoggerWriteLine("Log-файл успесно создан");
+                try
+                {
+                    Bygalteria test1 = new Bygalteria();
+                    //test1.Show();
+                    //test1.removeDoc(1);
+                    Check doc3 = new Check("12.11.2003", 123, 123556);
+                    for (int i = 0; i < 12; i++)
+                    {
+                        test1.addDoc(doc3);
+                    }
+                    documents[13].ToString();
+
+                    int test3 = 0;
+                    test3 /= 0;
+                }
+                catch (DivideByZeroException exception) when (testpr != 1)
+                {
+                    logger.FileLoggerWriteError("Error NullReferenceException", exception.Message, exception.StackTrace);
+                    logger.ConsoleLoggerError("Error NullReferenceException", exception.Message, exception.StackTrace);
+                }
+                catch (DivideByZeroException)
+                {
+                    Console.WriteLine("Попытка поднлить на ноль");
+                }
+                catch (NullCollectionException exception)
+                {
+                    Console.WriteLine($"ПРОИЗОШЛА ОШИБКА: {exception.Message}");
+                }
+                catch (MaxCollection exception) when (testpr != 1)
+                {
+                    logger.FileLoggerWriteError("Error Class MaxCollection", exception.Message, exception.StackTrace);
+                    logger.ConsoleLoggerError("Error class MaxCollections", exception.Message, exception.StackTrace);
+                }
+                catch (MaxCollection exception)
+                {
+                    Console.WriteLine($"ПРОИЗОШЛА ОШИБКА: {exception.Message}");
+                }
+                catch (DeleteNullObject exception)
+                {
+                    Console.WriteLine($"ПРОИЗОШЛА ОШИБКА: {exception.Message}");
+                }
+                catch 
+                {
+                    Console.WriteLine("Поиск возможной причины исключения выше");
+                    throw;
+                }
+            }
+            catch (IndexOutOfRangeException)
+            {
+                Console.WriteLine("Вы пытались обратитьс к элементу которого не существует, и как такое понимать?");
+            }
+            catch 
+            {
+                Console.WriteLine("Исключение необработано");
+            }
+            finally
+            {
+                Console.WriteLine("Тест закончился");
+            }
+
+
             Console.ReadKey();
         }
     }
