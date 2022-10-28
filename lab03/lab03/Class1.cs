@@ -6,24 +6,33 @@ using System.Threading.Tasks;
 
 namespace lab03
 {
-    class List
+    interface IList<T>
     {
-        Node tail;
-        Node head;
+        void AddNode(T info);
+        void ShowInfo();
+        void DeleteNode(T info);
+
+    }
+    class List<T>: IList<T> 
+    {
+        Node<T> tail;
+        Node<T> head;
         int length;
         public List()
         {
+              
             tail = null;
             head = null;
             length = 0;
         }
-        public Node Head
+        public Node<T> Head
         {
             get => head;
         }
-        public void AddNode(string info)
+
+        public void AddNode(T info)
         {
-            Node node = new Node();
+            Node<T> node = new Node<T>();
             node.Info = info;
             if (head == null)
             {
@@ -36,16 +45,45 @@ namespace lab03
             tail = node;
             length++;
         }
+        public void DeleteNode(T info)
+        {
+            Node<T> curr = head;
+            Node<T> prev = null;
+            bool flag = false;
+            while (curr != null)
+            {
+                if (curr.Info.Equals(info))
+                {
+                    if (prev != null)
+                    {
+                        prev.Next = curr.Next;
+                        if (curr.Next == null)
+                            tail = prev;
+                    }
+                    else
+                    {
+                        head = head.Next;
+
+                        if (head == null)
+                            tail = null;
+                    }
+                    flag = true;
+                }
+                prev = curr;
+                curr = curr.Next;
+            }
+            if (!flag) throw new DeleteNotFounded("Не найден элемент для удалянеия");
+        }
         public void ShowInfo()
         {
-            Node node = head;
+            Node<T> node = head;
             while (node != null)
             {
-                Console.WriteLine(node.Info);
+                Console.WriteLine(node.Info.ToString());
                 node = node.Next;
             }
         }
-        public static List operator +(Node node, List list)
+        public static List<T> operator +(Node<T> node, List<T> list)
         {
             node.Next = list.head;
             list.head = node;
@@ -56,23 +94,23 @@ namespace lab03
             list.length++;
             return list;
         }
-        public static List operator --(List list)
+        public static List<T> operator --(List<T> list)
         {
             list.head = list.head.Next;
             list.length--;
             return list;
         }
-        public static bool operator !=(List list1, List list2)
+        public static bool operator !=(List<T> list1, List<T> list2)
         {
             if (list1.length != list2.length)
             {
                 return true;
             }
-            Node curr1 = list1.head;
-            Node curr2 = list2.head;
+            Node<T> curr1 = list1.head;
+            Node<T> curr2 = list2.head;
             while (curr1 != null)
             {
-                if (curr1.Info != curr2.Info)
+                if (curr1.Info.ToString() != curr2.Info.ToString())
                 {
                     return true;
                 }
@@ -84,17 +122,17 @@ namespace lab03
             }
             return false;
         }
-        public static bool operator ==(List list1, List list2)
+        public static bool operator ==(List<T> list1, List<T> list2)
         {
             if (list1.length != list2.length)
             {
                 return false;
             }
-            Node curr1 = list1.head;
-            Node curr2 = list2.head;
+            Node<T> curr1 = list1.head;
+            Node<T> curr2 = list2.head;
             while (curr1 != null)
             {
-                if (curr1.Info != curr2.Info)
+                if (curr1.Info.ToString() != curr2.Info.ToString())
                 {
                     return false;
                 }
@@ -106,9 +144,9 @@ namespace lab03
             }
             return true;
         }
-        public static List operator *(List list1, List list2)
+        public static List<T> operator *(List<T> list1, List<T> list2)
         {
-            Node curr2 = list2.head;
+            Node<T> curr2 = list2.head;
             while (curr2 != null)
             {
                 list1.tail.Next = curr2;
@@ -118,71 +156,6 @@ namespace lab03
             }
             return list1;
         }
-        Production Product = new Production(199, "БЕЛАЗ"); // вложенный объект
-        class Production //вложенные классы
-        {
-            public Production(int id, string nameOfOrganization)
-            {
-                _id = id;
-                _nameOfOrganization = nameOfOrganization;
-            }
-            public int Id
-            {
-                get
-                {
-                    return _id;
-                }
-                set
-                {
-                    _id = value;
-                }
-            }
-            public string NameOfOrganization
-            {
-                get
-                {
-                    return _nameOfOrganization;
-                }
-                set
-                {
-                    _nameOfOrganization = value;
-                }
-            }
-            private int _id;
-            private string _nameOfOrganization;
-        }
-        public class Developer
-        {
-            int _id;
-            public int Id
-            {
-                get { return _id; }
-                set { _id = value; }
-            }
-            string _nameOfDeveloper;
-
-            public string NameOfDeveloper
-            {
-                get { return _nameOfDeveloper; }
-                set { _nameOfDeveloper = value; }
-            }
-            string _otdel;
-
-            public string OTdel
-            {
-                get { return _otdel; }
-                set
-                {
-                    _otdel = value;
-                }
-            }
-            public Developer(int id, string name, string otdel)
-            {
-
-                _id = id;
-                _nameOfDeveloper = name;
-                _otdel = otdel;
-            }
-        }
+      
     }
 }

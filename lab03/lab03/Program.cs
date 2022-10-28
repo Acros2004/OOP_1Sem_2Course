@@ -8,63 +8,90 @@ namespace lab03
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
-            List list1 = new List();
-            list1.AddNode("Y");
-            list1.AddNode("XX");
-            list1.AddNode("Z");
+            try
+            {
+                List<string> list = new List<string>();
+                Console.WriteLine(" - - - - - Вывод списка string  - - - - - - - ");
+                list.AddNode("sdfsfds");
+                list.AddNode("sdf");
+                list.AddNode("sfsfds");
+                list.ShowInfo();
+                Console.WriteLine(" - - - - - Вывод списка удалили элемент sdf- - - - - - - ");
+                list.DeleteNode("sdf");
+                //list.DeleteNode("sdf123");
+                list.ShowInfo();
+                Console.WriteLine("Количество элементов списка Check " + StaticOperations.Count(list));
+                Console.WriteLine(" - - - - - Вывод списка инт  - - - - - - - ");
+                List<int> listInt = new List<int>();
+                listInt.AddNode(12);
+                listInt.AddNode(13);
+                listInt.AddNode(345);
+                listInt.ShowInfo();
+                Console.WriteLine(" - - - - - Вывод списка инт удалили 12 - - - - - - - ");
+                listInt.DeleteNode(12);
+                listInt.ShowInfo();
+                //Console.WriteLine("Количество элементов списка int " + StaticOperations.Count(listInt));
 
-            List list2 = new List();
-            list2.AddNode("Y");
-            list2.AddNode("XX");
-            list2.AddNode("Z");
+                Check newcheck = new Check("12.11.2004", 12, 31233131);
+                Check newcheck2 = new Check("1.11.2004", 123, 31233131);
+                Check newcheck3 = new Check("11.11.2004", 1234, 31233131);
 
-            list1.ShowInfo();
-            Console.Write("\n");
-            list2.ShowInfo();
-            Console.Write("\nequals : ");
-            Console.WriteLine(list1 == list2);
-            Console.Write("\n");
+                Console.WriteLine(" - - - - - Вывод списка Сheck - - - - - - - ");
+                List<Check> listCheck = new List<Check>();
+                listCheck.AddNode(newcheck);
+                listCheck.AddNode(newcheck2);
+                listCheck.AddNode(newcheck3);
+                listCheck.ShowInfo();
+                Console.WriteLine(" - - - - - Вывод списка Сheck удалили сумму 12 - - - - - - - ");
+                listCheck.DeleteNode(newcheck);
+                listCheck.ShowInfo();
+                Console.WriteLine("Количество элементов списка Check " + StaticOperations.Count(listCheck));
+                Check newcheck4 = new Check("Пример", 53454, 1233141313);
+                Node<Check> node = new Node<Check>();
+                node.Info = newcheck4;
+                listCheck = node + listCheck;
+                Console.WriteLine("------------------------------------------");
+                listCheck.ShowInfo();
+                Console.WriteLine("------------------------------------------");
+                listCheck--;
+                listCheck.ShowInfo();
+                Console.WriteLine("------------------------------------------");
+                List<Check> listCheck2 = new List<Check>();
+                listCheck2.AddNode(newcheck);
+                listCheck2.AddNode(newcheck2);
+                listCheck2.AddNode(newcheck3);
+                Console.WriteLine(listCheck == listCheck2);
 
-            Node node = new Node();
-            node.Info = "R";
-            list1 = node + list1;
-            list1.ShowInfo();
-            Console.Write("\n");
-            list2.ShowInfo();
-            Console.Write("\nnot equals: ");
-            Console.WriteLine(list1 != list2);
-            Console.Write("\n");
+                List<Check> list4 = new List<Check>();
+                List<string> list6 = new List<string>();
+                List<int> list7 = new List<int>();
+                Streams<Check>.ReadFile(ref list4, ref list6, ref list7, @"C:\Users\noname\Desktop\123\OOP\lab03\out.txt");
+                Console.WriteLine("-------------------------------------------");
+                list4.ShowInfo();
 
-            list1--;
-            list1.ShowInfo();
-            Console.Write("\n");
-            list1 *= list2;
-            list1.ShowInfo();
-            Console.Write("\n");
 
-            List list3 = new List();
-            list3.AddNode("Vie");
-            list3.AddNode("gakjK");
-            list3.AddNode("jfFJf");
-            list3.AddNode("sdhS");
-            list3.AddNode("VSVfre");
-            list3.ShowInfo();
-            Console.Write("\n");
 
-            Console.WriteLine("Количество слов с заглавной буквой " + list3.CountFirstCapitalLetters());
-            Console.WriteLine("Повторяющиеся элементы в списке 3 = " + list3.CheckRepeatings());
-            Console.WriteLine("Повторяющиеся элементы в списке 2 = " + list2.CheckRepeatings());
-            Console.WriteLine("Количество элементов списка 3 =  " + StaticOperations.Count(list3));
-            Console.WriteLine(StaticOperations.ListString(list3));
-            Console.WriteLine("Сумма(слияние) элементов списка 1 "+StaticOperations.getSumString(list1));
-            Console.WriteLine("Разница в количестве символов большего и меньшего элемента в списке 3: " + StaticOperations.LongestInfo(list3));
+                List<Check> list5 = new List<Check>();
+                list5.AddNode(new Check("99999", 11111, 12));
+                list5.AddNode(new Check("44444", 222222, 13));
+                list5.AddNode(new Check("111111", 33333, 11));
+                Console.WriteLine("-------------------------------------------");
+                list5.ShowInfo();
 
-            string str = "mY NaMe Is NiKiTa";
-            Console.WriteLine(str + " изменено: " + StaticOperations.FormatText(str));
-            List.Developer person = new List.Developer(123, "Nikita", "BSTU");
-            Console.ReadKey();
+                Streams<Check>.InFile(ref list5, @"C:\Users\noname\Desktop\123\OOP\lab03\in.txt");
+            }
+            catch (DeleteNotFounded exception)
+            {
+                Console.WriteLine($"Произошла ошибка: {exception.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("тест закончился");
+            }
+
         }
 
     }

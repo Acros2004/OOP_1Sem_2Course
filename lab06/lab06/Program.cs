@@ -68,7 +68,7 @@ namespace lab04
            
             try
             {
-                int testpr = -1;
+                int testpr = 1;
                 Logger logger = new Logger();
                 logger.FileLoggerWriteLine("Log-файл успесно создан");
                 try
@@ -81,11 +81,11 @@ namespace lab04
                     //{
                     //    test1.addDoc(doc3);
                     //}
-                    //documents[13].ToString();
+                    documents[13].ToString();
 
                     //int test3 = 0;
                     //test3 /= 0;
-                    //Debugger.Launch();
+                    
                     Debug.Assert(testpr <= 1 && testpr >= 0, "Значение testpr может быть только 0 или 1");
                 }
                  

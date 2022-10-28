@@ -6,27 +6,18 @@ using System.Threading.Tasks;
 
 namespace lab03
 {
-    class Node
+    class Node<T>
     {
-        string inf;
-        Node next;
-        public string Info
-        {
-            get => inf;
-            set => inf = value;
-        }
-        public Node Next
-        {
-            get => next;
-            set => next = value;
-        }
+        Node<T> next;
+        public T Info;
+        public Node<T> Next;
     }
     static class StaticOperations
     {
-        public static int Count(List list)
+        public static int Count<T>(List<T> list) where T : class
         {
             int count = 0;
-            Node curr = list.Head;
+            Node<T> curr = list.Head;
             while (curr != null)
             {
                 count++;
@@ -34,10 +25,10 @@ namespace lab03
             }
             return count;
         }
-        public static string getSumString(List list)
+        public static string getSumString<T>(List<T> list) where T : class
         {
             string str = "";
-            Node curr = list.Head;
+            Node<T> curr = list.Head;
             while (curr != null)
             {
                 str = str + curr.Info;
@@ -45,31 +36,31 @@ namespace lab03
             }
             return str;
         }
-        public static string ListString(List list)
+        public static string ListString<T>(List<T> list) 
         {
             string str = "";
-            Node curr = list.Head;
+            Node<T> curr = list.Head;
             while (curr != null)
             {
-                str = str + curr.Info + ", ";
+                str = str + curr.Info.ToString() + ", ";
                 curr = curr.Next;
             }
             return str;
         }
-        public static int LongestInfo(List list)
+        public static int LongestInfo<T>(List<T> list) where T : struct
         {
-            Node curr = list.Head;
-            string str = curr.Info;
-            string str2 = curr.Info;
+            Node<T> curr = list.Head;
+            string str = curr.Info.ToString();
+            string str2 = curr.Info.ToString();
             while (curr != null)
             {
-                if (curr.Info.Length > str.Length)
+                if (curr.Info.ToString().Length > str.ToString().Length)
                 {
-                    str = curr.Info;
+                    str = curr.Info.ToString();
                 }
                 else
                 {
-                    str2 =curr.Info;
+                    str2 =curr.Info.ToString();
                 }
                 curr = curr.Next;
             }
@@ -82,33 +73,36 @@ namespace lab03
         {
             return char.ToUpper(str[0]) + str.Substring(1).ToLower();
         }
+        public static int CountFirstCapitalLetters(this string str)
+        {
+            int count = 0;
+            string[] words = str.Split(' ');
+            for (int i = 0; i < words.Length; i++)
+            {
+                string word = words[i];
+                if (char.IsUpper(word[0]))
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+
     }
 
     static class Extensions
     {
-        public static int CountFirstCapitalLetters(this List list)
+        
+        public static bool CheckRepeatings<T>(this List<T> list) where T : class
         {
-            Node curr = list.Head;
-            int count = 0;
+            Node<T> curr = list.Head;
             while (curr != null)
             {
-                if (char.IsUpper(curr.Info[0]))
-                {
-                    count++;
-                }
-                curr = curr.Next;
-            }
-            return count;
-        }
-        public static bool CheckRepeatings(this List list)
-        {
-            Node curr = list.Head;
-            while (curr != null)
-            {
-                Node node = curr.Next;
+                Node<T> node = curr.Next;
                 while (node != null)
                 {
-                    if (node.Info == curr.Info)
+                    if (node.Info.ToString() == curr.Info.ToString())
                     {
                         return true;
                     }

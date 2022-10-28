@@ -89,7 +89,7 @@ namespace lab04
                         break;
                     case "Naklad":
                         string provString = textFile[i];
-                        for(int j = 0; j < 4; j++)
+                        for(int j = 0; j < 2; j++)
                         {
                             provString = provString.Replace(dwordLine[j],"");
                         }
