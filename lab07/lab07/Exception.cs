@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab07
+namespace lab03
 {
-    internal class Exception
+    class DeleteNotFounded : Exception
     {
+        public DeleteNotFounded(string message) : base(message) { }
     }
+
+
+
 }

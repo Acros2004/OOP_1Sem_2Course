@@ -68,7 +68,7 @@ namespace lab03
                 List<Check> list4 = new List<Check>();
                 List<string> list6 = new List<string>();
                 List<int> list7 = new List<int>();
-                Streams<Check>.ReadFile(ref list4, ref list6, ref list7, @"C:\Users\noname\Desktop\123\OOP\lab03\out.txt");
+                Streams<Check>.ReadFile(ref list4, ref list6, ref list7, @"C:\Users\noname\Desktop\123\OOP\lab07\out.txt");
                 Console.WriteLine("-------------------------------------------");
                 list4.ShowInfo();
 
@@ -81,7 +81,7 @@ namespace lab03
                 Console.WriteLine("-------------------------------------------");
                 list5.ShowInfo();
 
-                Streams<Check>.InFile(ref list5, @"C:\Users\noname\Desktop\123\OOP\lab03\in.txt");
+                Streams<Check>.InFile(ref list5, @"C:\Users\noname\Desktop\123\OOP\lab07\in.txt");
             }
             catch (DeleteNotFounded exception)
             {
