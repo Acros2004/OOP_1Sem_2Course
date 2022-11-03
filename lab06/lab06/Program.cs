@@ -68,7 +68,7 @@ namespace lab04
            
             try
             {
-                int testpr = 1;
+                int testpr = 0;
                 Logger logger = new Logger();
                 logger.FileLoggerWriteLine("Log-файл успесно создан");
                 try
@@ -76,16 +76,16 @@ namespace lab04
                     Bygalteria test1 = new Bygalteria();
                     //test1.Show();
                     //test1.removeDoc(1);
-                    //Check doc3 = new Check("12.11.2003", 123, 123556);
-                    //for (int i = 0; i < 12; i++)
-                    //{
-                    //    test1.addDoc(doc3);
-                    //}
-                    documents[13].ToString();
+                    Check doc3 = new Check("12.11.2003", 123, 123556);
+                    for (int i = 0; i < 12; i++)
+                    {
+                        test1.addDoc(doc3);
+                    }
+                    //documents[13].ToString();
 
                     //int test3 = 0;
                     //test3 /= 0;
-                    
+
                     Debug.Assert(testpr <= 1 && testpr >= 0, "Значение testpr может быть только 0 или 1");
                 }
                  

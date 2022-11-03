@@ -89,13 +89,13 @@ namespace lab04
                         break;
                     case "Naklad":
                         string provString = textFile[i];
-                        for(int j = 0; j < 2; j++)
+                        for(int j = 0; j < 4; j++)
                         {
                             provString = provString.Replace(dwordLine[j],"");
                         }
-                        collection.addDoc(new Naklad(dwordLine[1], dwordLine[2], provString, Convert.ToInt32(dwordLine[3])));
+                        collection.addDoc(new Naklad(dwordLine[1], dwordLine[3], provString, Convert.ToInt32(dwordLine[2])));
                         break;
-                    case "Cheak":
+                    case "Check":
                         collection.addDoc(new Check(dwordLine[1], Convert.ToInt32(dwordLine[2]), long.Parse(dwordLine[3])));
                         break;
                 }

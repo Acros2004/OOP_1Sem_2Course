@@ -104,7 +104,7 @@ namespace lab04
                         {
                             provString = provString.Replace(dwordLine[j], "");
                         }
-                        collection.addDoc(new Naklad(dwordLine[1], dwordLine[2], provString, Convert.ToInt32(dwordLine[3])));
+                        collection.addDoc(new Naklad(dwordLine[1], dwordLine[3], provString, Convert.ToInt32(dwordLine[2])));
                         break;
                     case "Cheak":
                         collection.addDoc(new Check(dwordLine[1], Convert.ToInt32(dwordLine[2]), long.Parse(dwordLine[3])));

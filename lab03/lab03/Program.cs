@@ -23,15 +23,17 @@ namespace lab03
                 list.DeleteNode("sdf");
                 //list.DeleteNode("sdf123");
                 list.ShowInfo();
-                Console.WriteLine("Количество элементов списка Check " + StaticOperations.Count(list));
+                Console.WriteLine("Количество элементов списка string " + StaticOperations.Count(list));
                 Console.WriteLine(" - - - - - Вывод списка инт  - - - - - - - ");
                 List<int> listInt = new List<int>();
-                listInt.AddNode(12);
+                listInt.AddNode(1);
                 listInt.AddNode(13);
                 listInt.AddNode(345);
                 listInt.ShowInfo();
+                Console.WriteLine("Разница количества символов между наименьшим и наибольшим элементами из списка Int " + StaticOperations.LongestInfo(listInt));
+                //Console.WriteLine("Разница количества символов между наименьшим и наибольшим элементами из списка Int " + StaticOperations.LongestInfo(list));
                 Console.WriteLine(" - - - - - Вывод списка инт удалили 12 - - - - - - - ");
-                listInt.DeleteNode(12);
+                listInt.DeleteNode(1);
                 listInt.ShowInfo();
                 //Console.WriteLine("Количество элементов списка int " + StaticOperations.Count(listInt));
 

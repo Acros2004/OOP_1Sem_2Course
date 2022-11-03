@@ -8,7 +8,7 @@ namespace lab03
 {
     class Node<T>
     {
-        Node<T> next;
+       
         public T Info;
         public Node<T> Next;
     }
@@ -50,15 +50,15 @@ namespace lab03
         public static int LongestInfo<T>(List<T> list) where T : struct
         {
             Node<T> curr = list.Head;
-            string str = curr.Info.ToString();
-            string str2 = curr.Info.ToString();
+            string? str = curr.Info.ToString();
+            string? str2 = curr.Info.ToString();
             while (curr != null)
             {
                 if (curr.Info.ToString().Length > str.ToString().Length)
                 {
                     str = curr.Info.ToString();
                 }
-                else
+                else if (curr.Info.ToString().Length < str2.ToString().Length)
                 {
                     str2 =curr.Info.ToString();
                 }

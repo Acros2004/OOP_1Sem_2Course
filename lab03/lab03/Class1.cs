@@ -72,7 +72,7 @@ namespace lab03
                 prev = curr;
                 curr = curr.Next;
             }
-            if (!flag) throw new DeleteNotFounded("Не найден элемент для удалянеия");
+            if (!flag) throw new DeleteNotFounded("Не найден элемент для удаления");
         }
         public void ShowInfo()
         {

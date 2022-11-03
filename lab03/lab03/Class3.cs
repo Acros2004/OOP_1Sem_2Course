@@ -97,11 +97,8 @@ namespace lab03
         }
         public override string ToString()
         {
-            //Console.WriteLine("\tЧек");
-            //Console.WriteLine($"Сумма перевода на карту {CardNumber} составляет {Sum} рублей");
             string str = $"Check {_data} {Sum} {CardNumber}";
             return str;
-            //return "\0";
         }
     }
     class Streams<T> where T : class
