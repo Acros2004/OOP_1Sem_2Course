@@ -9,6 +9,7 @@ namespace lab08
 {
     class Programmer
     {
+
         public delegate void LANG(List<string> list);
         public event LANG Delete;
         public event LANG Mutate;
