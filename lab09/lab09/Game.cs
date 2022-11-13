@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace lab09
 {
-    internal class Game
+    class Game
     {
+
+        public string type;
+
+        public string Type
+        {
+            get { return type; }
+            set { }
+        }
+
+        public Game(string type)
+        {
+            Type = type;
+        }
+        public override string ToString()
+        {
+            return Type;
+        }
     }
 }
