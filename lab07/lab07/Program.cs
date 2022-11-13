@@ -32,6 +32,8 @@ namespace lab03
                 listInt.ShowInfo();
                 Console.WriteLine(" - - - - - Вывод списка инт удалили 12 - - - - - - - ");
                 listInt.DeleteNode(12);
+                listInt.FoundNode(132313);
+                Console.WriteLine(" - - - - - Вывод инта - - - - - - - ");
                 listInt.ShowInfo();
                 //Console.WriteLine("Количество элементов списка int " + StaticOperations.Count(listInt));
 
@@ -68,9 +70,11 @@ namespace lab03
                 List<Check> list4 = new List<Check>();
                 List<string> list6 = new List<string>();
                 List<int> list7 = new List<int>();
-                Streams<Check>.ReadFile(ref list4, ref list6, ref list7, @"C:\Users\noname\Desktop\123\OOP\lab03\out.txt");
-                Console.WriteLine("-------------------------------------------");
+                Streams<Check>.ReadFile(ref list4, ref list6, ref list7, @"C:\Users\noname\Desktop\123\OOP\lab07\out.txt");
+                Console.WriteLine("-------------------------------------------Вывод считанных данных");
                 list4.ShowInfo();
+                list6.ShowInfo();
+                list7.ShowInfo();
 
 
 
@@ -78,10 +82,11 @@ namespace lab03
                 list5.AddNode(new Check("99999", 11111, 12));
                 list5.AddNode(new Check("44444", 222222, 13));
                 list5.AddNode(new Check("111111", 33333, 11));
-                Console.WriteLine("-------------------------------------------");
+                Console.WriteLine("------------------------------------------- Данные которые запишутся в файл");
                 list5.ShowInfo();
 
-                Streams<Check>.InFile(ref list5, @"C:\Users\noname\Desktop\123\OOP\lab03\in.txt");
+                Streams<Check>.InFile(ref list5, @"C:\Users\noname\Desktop\123\OOP\lab07\in.txt");
+                //Streams<string>.InFile(ref list6, @"C:\Users\noname\Desktop\123\OOP\lab07\in.txt");
             }
             catch (DeleteNotFounded exception)
             {

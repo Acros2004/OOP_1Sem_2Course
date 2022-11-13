@@ -53,14 +53,19 @@ namespace lab08
             Console.WriteLine($"\n\nСтрока: {str}");
             A = StringEditor.RemovePunctuation;
             Console.WriteLine($"{A.Method.Name}: {A(str)}");
-            A = StringEditor.AddSymbol;
+            str = A(str);
+            A += StringEditor.AddSymbol;
             Console.WriteLine($"{A.Method.Name}: {A(str)}");
-            A = StringEditor.ToUpper;
+            str = A(str);
+            A += StringEditor.ToUpper;
             Console.WriteLine($"{A.Method.Name}: {A(str)}");
-            A = StringEditor.ToLower;
+            str = A(str);
+            A += StringEditor.ToLower;
             Console.WriteLine($"{A.Method.Name}: {A(str)}");
-            A = StringEditor.RemoveSpace;
+            str = A(str);
+            A += StringEditor.RemoveSpace;
             Console.WriteLine($"{A.Method.Name}: {A(str)}");
+            str = A(str);
 
             Console.ReadKey();
         }

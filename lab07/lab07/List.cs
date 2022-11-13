@@ -45,6 +45,23 @@ namespace lab03
             tail = node;
             length++;
         }
+        public void FoundNode(T info)
+        {
+            Node<T> curr = head;
+            Node<T> prev = null;
+            bool flag = false;
+            while (curr != null)
+            {
+                if (curr.Info.Equals(info))
+                {
+                    Console.WriteLine(curr.Info);
+                    flag = true;
+                }
+                prev = curr;
+                curr = curr.Next;
+            }
+            if (!flag) throw new DeleteNotFounded("Не найден элемент");
+        }
         public void DeleteNode(T info)
         {
             Node<T> curr = head;

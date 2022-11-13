@@ -35,7 +35,8 @@ namespace lab08
     {
         public static string RemovePunctuation(string str)
         {
-            return Regex.Replace(str, "[.,;:]", string.Empty);
+            str = Regex.Replace(str, "[.,;:]", string.Empty);
+            return str;
         }
 
         public static string AddSymbol(string str)
