@@ -8,9 +8,7 @@ namespace lab10
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            static void Main(string[] args)
+         static void Main(string[] args)
             {
                 string[] months = {
                 "January",
@@ -128,5 +126,4 @@ namespace lab10
                 Console.ReadKey();
             }
         }
-    }
 }
