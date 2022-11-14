@@ -26,5 +26,6 @@ namespace lab09
         {
             return Type;
         }
+        
     }
 }

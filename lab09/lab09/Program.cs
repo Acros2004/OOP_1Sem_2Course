@@ -54,6 +54,16 @@ namespace lab09
             {
                 dict.Add(item, item);
             }
+            foreach (var pair in dict)
+            {
+                Console.WriteLine($"ключ {pair.Key}, значение {pair.Value}");
+            }
+            int pair2;
+            if (dict.TryGetValue(30,out pair2))
+            {
+                pair2 = dict[30];
+                Console.WriteLine($"объект :{pair2}- найден");
+            }
             ObservableCollection<Game> obsGame = new ObservableCollection<Game>() { arcade, strategy, quest, simulation };
             obsGame.CollectionChanged += ObsGameChanged;
             Game newGame = new Game("Fighting");
@@ -61,6 +71,7 @@ namespace lab09
             obsGame.Remove(strategy);
             Console.ReadKey();
         }
+       
         private static void ObsGameChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             switch (e.Action)
