@@ -1,0 +1,15 @@
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\obj\Debug\net6.0\lab12.csproj.AssemblyReference.cache
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\obj\Debug\net6.0\lab12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\obj\Debug\net6.0\lab12.AssemblyInfoInputs.cache
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\obj\Debug\net6.0\lab12.AssemblyInfo.cs
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\obj\Debug\net6.0\lab12.csproj.CoreCompileInputs.cache
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\bin\Debug\net6.0\lab12.exe
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\bin\Debug\net6.0\lab12.deps.json
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\bin\Debug\net6.0\lab12.runtimeconfig.json
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\bin\Debug\net6.0\lab12.dll
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\bin\Debug\net6.0\lab12.pdb
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\obj\Debug\net6.0\lab12.dll
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\obj\Debug\net6.0\refint\lab12.dll
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\obj\Debug\net6.0\lab12.pdb
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\obj\Debug\net6.0\lab12.genruntimeconfig.cache
+C:\Users\noname\Desktop\123\OOP\lab12\lab12\obj\Debug\net6.0\ref\lab12.dll
