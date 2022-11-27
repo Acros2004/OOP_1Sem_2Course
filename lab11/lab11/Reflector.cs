@@ -71,14 +71,34 @@ namespace lab11
         }
         public static void MethodType(string name, string param, StreamWriter sw)
         {
-            Type type = Type.GetType(name, false, true);
-            foreach (var item in type.GetMethods())
+            Type type = Type.GetType(name);
+
+            var bf = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance | BindingFlags.Static;
+
+            var collectionMethod = type.GetMethods(bf);
+
+            
+            foreach (var method in collectionMethod)
             {
-                if (item.GetParameters().Any(e => e.Name == param))
+                var collectionParameters = method.GetParameters();
+                for (int i = 0; i < collectionParameters.Length; i++)
                 {
-                    sw.WriteLine(item);
+                    if (collectionParameters[i].ParameterType.Name == param)
+                    {
+                       sw.WriteLine(method);
+                    }
                 }
             }
+
+
+            //Type type = Type.GetType(name, false, true);
+            //foreach (var item in type.GetMethods())
+            //{
+            //    if (item.GetParameters().Any(e => e.Name == param))
+            //    {
+            //        sw.WriteLine(item);
+            //    }
+            //}
         }
         public static void Invoke(string name, string methodName)
         {
@@ -86,9 +106,33 @@ namespace lab11
             {
                 Type type = Type.GetType(name, false, true);
                 object obj = Activator.CreateInstance(type);
-                string[] param = File.ReadAllLines(@"Invoke.txt");
+                
+                string[] str = File.ReadAllLines(@"Invoke.txt");
+                List<string> app = new List<string>();
+                Random random = new Random();
+
+                if (str.Length == 0)
+                {
+                    if(type.Name == "Product")
+                    {
+                        str = new string[3];
+                        string temp;
+                        for(int i = 0; i < 3; i++)
+                        {
+                            int j = random.Next(10);
+                            temp = $"Preduct{j}";
+                            str[i] = temp;
+
+                        }
+                    }
+                }
+                foreach(var temp in str)
+                {
+                    app.Add(temp);
+                }
+                List<string>[] list = new List<string>[] { app };
                 MethodInfo method = type.GetMethod(methodName);
-                method.Invoke(obj, param);
+                method.Invoke(obj, list);
             }
             catch (Exception e)
             {

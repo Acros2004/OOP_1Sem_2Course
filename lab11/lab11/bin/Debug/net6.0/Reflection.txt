@@ -20,6 +20,7 @@ PrintClassInfo
 PrintSum
 ChangePrice
 Print
+PrintProducts
 GetType
 Equals
 GetHashCode
@@ -33,9 +34,32 @@ Count
 -----все реализованные классом интерфейсы------
 Int
 -----выводит по имени класса имена методов------
-Void ChangePrice(Int32 ByRef, Int32 ByRef)
+Void set_Producer(System.String)
+Void set_Name(System.String)
+Void Print(System.String)
 -----метод Invoke------
 name: , price 0, producer 
+****************************************************************************
+-----определение имени сборки------
+lab11, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+-----публичные конструкторы----- 
+True
+-----все общедоступные публичные методы------
+Work
+OnDownSalary
+OnUpLevel
+ToString
+GetType
+Equals
+GetHashCode
+-----информация о полях и свойствах класса------
+Salary
+Level
+Wallet
+-----все реализованные классом интерфейсы------
+-----выводит по имени класса имена методов------
+Void Work(Int32)
+Работник: Зарплата = 0, Кошелёк = 0, Зарплата = 0, Уровень = 0
 ****************************************************************************
 -----определение имени сборки------
 lab11, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -308,5 +332,3 @@ MetadataToken
 ICustomAttributeProvider
 IReflect
 -----выводит по имени класса имена методов------
-Boolean IsEnumDefined(System.Object)
-System.String GetEnumName(System.Object)

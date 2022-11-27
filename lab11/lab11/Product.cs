@@ -175,6 +175,14 @@ namespace lab11
         {
             Console.WriteLine(message);
         }
+        public void PrintProducts(List<string> parm)
+        {
+            foreach (var product in parm)
+            {
+                Console.WriteLine(product);
+            }
+           
+        }
     }
     interface Int
     {
