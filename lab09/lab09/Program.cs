@@ -20,7 +20,7 @@ namespace lab09
             game.ShowCollection();
             game.Search(strategy);
 
-            BlockingCollection<int> bc = new BlockingCollection<int>(boundedCapacity: 5);
+            BlockingCollection<int> bc = new BlockingCollection<int>(boundedCapacity: 6);
             bc.Add(10);
             bc.Add(20);
             bc.Add(30);
