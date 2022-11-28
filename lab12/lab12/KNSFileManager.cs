@@ -101,7 +101,7 @@ namespace lab12
                 {
                     if (file.Extension == extension)
                     {
-                        file.CopyTo("C:\\Users\\Илья\\Desktop\\Пацей\\ООП\\Labs\\Lab_12\\KNSFiles\\" + file.Name);
+                        file.CopyTo("C:\\Users\\noname\\Desktop\\123\\OOP\\lab12\\KNSFiles\\" + file.Name);
                     }
                 }
             }
@@ -134,53 +134,62 @@ namespace lab12
             ZipFile.ExtractToDirectory(patch_01, patch_02);
         }
 
-        public static void FindInformationFromDay(int dayUser)
+        public static void FindInformationFromDay(int dayUser, int hour,int action)
         {
             StringBuilder stringBuilder = new StringBuilder();
 
             int count = 0;
 
-            using (var stream = new StreamReader(@"C:\Users\noname\Desktop\123\OOP\lab12knslogfile.txt"))
+            using (var stream = new StreamReader(@"C:\Users\noname\Desktop\123\OOP\lab12\knslogfile.txt"))
             {
 
                 bool isActual = false;
                 var textLine_01 = "";
                 string line = "";
                 var textData = "";
-
-                while (!stream.EndOfStream)
-                {
-                    isActual = false;
-                    textLine_01 = stream.ReadLine();
-                    textLine_01 += stream.ReadLine();
-
-                    textData = stream.ReadLine();
-
-                    if (DateTime.Parse(textData.Substring(13)).Day == dayUser)
-                        isActual = true;
-
-                    if (isActual)
+                
+                    while (!stream.EndOfStream)
                     {
-                        count++;
-                        stringBuilder.Append(textLine_01 + "\n\n" + textData);
-                    }
+                        isActual = false;
+                        textLine_01 = stream.ReadLine();
+                        textLine_01 += stream.ReadLine();
 
-                    line = stream.ReadLine();
+                        textData = stream.ReadLine();
 
-                    while (line != "<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><")
-                    {
+                        
+                        if (Convert.ToInt32(textLine_01[35]) - 48 == action && action != 0 && DateTime.Parse(textData.Substring(13)).Hour == hour && DateTime.Parse(textData.Substring(13)).Day == dayUser)
+                        {
+                            isActual = true;
+                        }
+                        if (DateTime.Parse(textData.Substring(13)).Day == dayUser && DateTime.Parse(textData.Substring(13)).Hour == hour && action == 0)
+                            isActual = true;
+
                         if (isActual)
                         {
-                            stringBuilder.Append("\n");
-                            stringBuilder.Append(line);
-
+                            count++;
+                            stringBuilder.Append(textLine_01 + "\n\n" + textData);
                         }
 
                         line = stream.ReadLine();
-                    }
 
-                    if (isActual) stringBuilder.Append("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><\n");
-                }
+                        while (line != "<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><")
+                        {
+                            if (isActual)
+                            {
+                                stringBuilder.Append("\n");
+                                stringBuilder.Append(line);
+
+                            }
+
+                            line = stream.ReadLine();
+                        }
+
+                        if (isActual) stringBuilder.Append("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><\n");
+                    }
+               
+                
+
+                
             }
             Console.WriteLine($"\n=========================\n");
             Console.WriteLine($"Fing Action = {count}");
