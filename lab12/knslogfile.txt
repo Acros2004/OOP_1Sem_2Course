@@ -1,24 +1,24 @@
 <><><><><><><><><><><><><> Action: 1 <><><><><><><><><><><><><>
 
-Time Update: 21.11.2022 19:41:10
+Time Update: 30.11.2022 18:55:46
 
-Free space on the disk D:\ = 211537289216 bytes
+Free space on the disk D:\ = 53602164736 bytes
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
 <><><><><><><><><><><><><> Action: 2 <><><><><><><><><><><><><>
 
-Time Update: 21.11.2022 19:41:10
+Time Update: 30.11.2022 18:55:46
 
 File System Information D:\ :
 Type: Fixed
 Format: NTFS
-TotalSize: 279836618752 bytes
+TotalSize: 499972567040 bytes
 
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
 <><><><><><><><><><><><><> Action: 3 <><><><><><><><><><><><><>
 
-Time Update: 21.11.2022 19:41:10
+Time Update: 30.11.2022 18:55:46
 
 All drives information: 
 
@@ -26,77 +26,179 @@ Disk C:\:
 
 Type: Fixed
 Format: NTFS
-TotalSize: 163857821696 bytes
-Free space: 14879174656 bytes
+TotalSize: 254721126400 bytes
+Free space: 32712617984 bytes
 - - - - - - - - - - - - - - - - - - - - -
 Disk D:\:
 
 Type: Fixed
 Format: NTFS
-TotalSize: 279836618752 bytes
-Free space: 211537289216 bytes
+TotalSize: 499972567040 bytes
+Free space: 53602164736 bytes
 - - - - - - - - - - - - - - - - - - - - -
 
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
 <><><><><><><><><><><><><> Action: 4 <><><><><><><><><><><><><>
 
-Time Update: 21.11.2022 19:41:10
+Time Update: 30.11.2022 18:55:46
 
-File mrclogfile.txt:
+File knslogfile.txt:
 
- File full name: C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_12\mrclogfile.txt
+ File full name: C:\Users\noname\Desktop\123\OOP\lab12\knslogfile.txt
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
 <><><><><><><><><><><><><> Action: 5 <><><><><><><><><><><><><>
 
-Time Update: 21.11.2022 19:41:10
+Time Update: 30.11.2022 18:55:46
 
-File mrclogfile.txt:
+File knslogfile.txt:
 
- File full name: C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_12\mrclogfile.txt
-File Size: 1220
+ File full name: C:\Users\noname\Desktop\123\OOP\lab12\knslogfile.txt
+File Size: 1200
 File Extension: .txt
 
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
 <><><><><><><><><><><><><> Action: 6 <><><><><><><><><><><><><>
 
-Time Update: 21.11.2022 19:41:10
+Time Update: 30.11.2022 18:55:46
 
-File mrclogfile.txt:
+File knslogfile.txt:
 
- File full name: C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_12\mrclogfile.txt
-Date of creation: 21.11.2022 19:39:51
-Date of last edit: 21.11.2022 19:41:10
+ File full name: C:\Users\noname\Desktop\123\OOP\lab12\knslogfile.txt
+Date of creation: 28.11.2022 0:58:50
+Date of last edit: 30.11.2022 18:55:46
 
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
 <><><><><><><><><><><><><> Action: 7 <><><><><><><><><><><><><>
 
-Time Update: 21.11.2022 19:41:10
+Time Update: 30.11.2022 18:55:46
 
-The amount of files = 0
+The amount of files = 2
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
 <><><><><><><><><><><><><> Action: 8 <><><><><><><><><><><><><>
 
-Time Update: 21.11.2022 19:41:10
+Time Update: 30.11.2022 18:55:46
 
-Time of the directory creation: 16.11.2022 10:41:17
+Time of the directory creation: 28.11.2022 0:56:28
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
 <><><><><><><><><><><><><> Action: 9 <><><><><><><><><><><><><>
 
-Time Update: 21.11.2022 19:41:10
+Time Update: 30.11.2022 18:55:46
 
-Amount of subdirectories: 15
+Amount of subdirectories: 14
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
 <><><><><><><><><><><><><> Action: 10 <><><><><><><><><><><><><>
 
-Time Update: 21.11.2022 19:41:10
+Time Update: 30.11.2022 18:55:46
 
-Parent Directory: C:\Users\Илья\Desktop\Пацей\ООП\Labs
+Parent Directory: C:\Users\noname\Desktop\123\OOP
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+<><><><><><><><><><><><><> Action: 1 <><><><><><><><><><><><><>
+
+Time Update: 30.11.2022 19:05:31
+
+Free space on the disk D:\ = 53602164736 bytes
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+<><><><><><><><><><><><><> Action: 2 <><><><><><><><><><><><><>
+
+Time Update: 30.11.2022 19:05:31
+
+File System Information D:\ :
+Type: Fixed
+Format: NTFS
+TotalSize: 499972567040 bytes
+
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+<><><><><><><><><><><><><> Action: 3 <><><><><><><><><><><><><>
+
+Time Update: 30.11.2022 19:05:31
+
+All drives information: 
+
+Disk C:\:
+
+Type: Fixed
+Format: NTFS
+TotalSize: 254721126400 bytes
+Free space: 32807960576 bytes
+- - - - - - - - - - - - - - - - - - - - -
+Disk D:\:
+
+Type: Fixed
+Format: NTFS
+TotalSize: 499972567040 bytes
+Free space: 53602164736 bytes
+- - - - - - - - - - - - - - - - - - - - -
+
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+<><><><><><><><><><><><><> Action: 4 <><><><><><><><><><><><><>
+
+Time Update: 30.11.2022 19:05:31
+
+File knslogfile.txt:
+
+ File full name: C:\Users\noname\Desktop\123\OOP\lab12\knslogfile.txt
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+<><><><><><><><><><><><><> Action: 5 <><><><><><><><><><><><><>
+
+Time Update: 30.11.2022 19:05:31
+
+File knslogfile.txt:
+
+ File full name: C:\Users\noname\Desktop\123\OOP\lab12\knslogfile.txt
+File Size: 3862
+File Extension: .txt
+
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+<><><><><><><><><><><><><> Action: 6 <><><><><><><><><><><><><>
+
+Time Update: 30.11.2022 19:05:31
+
+File knslogfile.txt:
+
+ File full name: C:\Users\noname\Desktop\123\OOP\lab12\knslogfile.txt
+Date of creation: 28.11.2022 0:58:50
+Date of last edit: 30.11.2022 19:05:31
+
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+<><><><><><><><><><><><><> Action: 7 <><><><><><><><><><><><><>
+
+Time Update: 30.11.2022 19:05:31
+
+The amount of files = 2
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+<><><><><><><><><><><><><> Action: 8 <><><><><><><><><><><><><>
+
+Time Update: 30.11.2022 19:05:31
+
+Time of the directory creation: 28.11.2022 0:56:28
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+<><><><><><><><><><><><><> Action: 9 <><><><><><><><><><><><><>
+
+Time Update: 30.11.2022 19:05:31
+
+Amount of subdirectories: 14
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+<><><><><><><><><><><><><> Action: 10 <><><><><><><><><><><><><>
+
+Time Update: 30.11.2022 19:05:31
+
+Parent Directory: C:\Users\noname\Desktop\123\OOP
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><

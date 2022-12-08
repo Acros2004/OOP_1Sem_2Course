@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OysVVJ3HgGJ2u/UBkyBOPlY9TUIoACtCuDPE12/BYedeNZyGRYRDU9MMyfwF9RT5CHjBVSu4RIP/v31CIJnIvA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\noname\\Desktop\\123\\OOP\\lab13\\DeSerialisation\\Kontrosha_2\\Klient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\noname\\.nuget\\packages\\soapformatter\\1.1.9\\soapformatter.1.1.9.nupkg.sha512"
+  ],
+  "logs": []
+}

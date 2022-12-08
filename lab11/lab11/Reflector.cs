@@ -125,6 +125,18 @@ namespace lab11
 
                         }
                     }
+                    if (type.Name == "Employees")
+                    {
+                        str = new string[3];
+                        string temp;
+                        for (int i = 0; i < 3; i++)
+                        {
+                            int j = random.Next(10);
+                            temp = $"Employees{j}";
+                            str[i] = temp;
+
+                        }
+                    }
                 }
                 foreach(var temp in str)
                 {

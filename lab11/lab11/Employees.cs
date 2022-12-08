@@ -46,5 +46,13 @@ namespace lab11
         {
             return $"Работник: Зарплата = {Salary}, Кошелёк = {Wallet}, Зарплата = {Salary}, Уровень = {Level}";
         }
+        public void PrintEmployees(List<string> parm)
+        {
+            foreach (var product in parm)
+            {
+                Console.WriteLine(product);
+            }
+
+        }
     }
 }

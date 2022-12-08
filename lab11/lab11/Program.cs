@@ -48,6 +48,8 @@ namespace lab11
                 Reflector.Interfaces(name, sw);
                 sw.WriteLine("-----выводит по имени класса имена методов------");
                 Reflector.MethodType(name, "Int32", sw);
+                sw.WriteLine("-----метод Invoke------");
+                Reflector.Invoke(name, "PrintEmployees");
                 sw.WriteLine(Reflector.Create(name).ToString());
                 sw.WriteLine("****************************************************************************");
             }

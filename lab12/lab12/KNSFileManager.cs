@@ -40,11 +40,12 @@ namespace lab12
         }
         public static void CreateDirectory(string patch)
         {
+            string ext = Path.GetExtension(patch);
             DirectoryInfo directoryInfo = new DirectoryInfo(patch);
 
             if (directoryInfo.Exists)
             {
-                throw new Exception($"Directory ({patch}) already exist");
+                throw new Exception($"Directory ({patch}) {ext} already exist");
             }
             else
                 Directory.CreateDirectory(patch);

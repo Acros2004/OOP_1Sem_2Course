@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LKGvR5IgqI3iT7EhLdbLGratGxB3mrZAJ8TjfFLr3vPJkMVdDvhze7XfQZJ5U7Wk09E9h33oZ6Wj86U/zMDgrA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\noname\\Desktop\\123\\OOP\\lab13\\DeSerialisation\\DeSerialisation\\DeSerialisation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\noname\\.nuget\\packages\\soapformatter\\1.1.9\\soapformatter.1.1.9.nupkg.sha512"
+  ],
+  "logs": []
+}

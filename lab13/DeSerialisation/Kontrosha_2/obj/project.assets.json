@@ -1,0 +1,114 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "SoapFormatter/1.1.9": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/SoapFormatter.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SoapFormatter.dll": {}
+        }
+      },
+      "DeSerialisation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SoapFormatter": "1.1.9"
+        },
+        "compile": {
+          "bin/placeholder/DeSerialisation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DeSerialisation.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SoapFormatter/1.1.9": {
+      "sha512": "9okRnHpuoOKlTlxid6sddSjZ0OVGbK4EjSf3VvxOLnQfTkV3iGZzSQa2ZYYuD+apairVrPqwZ3lPvcFqR8b7Kw==",
+      "type": "package",
+      "path": "soapformatter/1.1.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/SoapFormatter.dll",
+        "soapformatter.1.1.9.nupkg.sha512",
+        "soapformatter.nuspec"
+      ]
+    },
+    "DeSerialisation/1.0.0": {
+      "type": "project",
+      "path": "../DeSerialisation/DeSerialisation.csproj",
+      "msbuildProject": "../DeSerialisation/DeSerialisation.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "DeSerialisation >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\noname\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\noname\\Desktop\\123\\OOP\\lab13\\DeSerialisation\\Kontrosha_2\\Klient.csproj",
+      "projectName": "Klient",
+      "projectPath": "C:\\Users\\noname\\Desktop\\123\\OOP\\lab13\\DeSerialisation\\Kontrosha_2\\Klient.csproj",
+      "packagesPath": "C:\\Users\\noname\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\noname\\Desktop\\123\\OOP\\lab13\\DeSerialisation\\Kontrosha_2\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\noname\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\noname\\Desktop\\123\\OOP\\lab13\\DeSerialisation\\DeSerialisation\\DeSerialisation.csproj": {
+              "projectPath": "C:\\Users\\noname\\Desktop\\123\\OOP\\lab13\\DeSerialisation\\DeSerialisation\\DeSerialisation.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
