@@ -35,7 +35,7 @@ namespace Server
 
             var data = message;
 
-            //tcpSocket.Connect(tcpEndPoint);
+            tcpSocket.Connect(tcpEndPoint);
             tcpSocket.Send(data);
             var buffer = new byte[1000];
             var answer = new StringBuilder();
