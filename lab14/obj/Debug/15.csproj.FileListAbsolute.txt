@@ -1,0 +1,8 @@
+C:\Users\noname\Desktop\OOP-3sem-master\15\bin\Debug\15.exe.config
+C:\Users\noname\Desktop\OOP-3sem-master\15\bin\Debug\15.exe
+C:\Users\noname\Desktop\OOP-3sem-master\15\bin\Debug\15.pdb
+C:\Users\noname\Desktop\OOP-3sem-master\15\obj\Debug\15.csproj.AssemblyReference.cache
+C:\Users\noname\Desktop\OOP-3sem-master\15\obj\Debug\15.csproj.SuggestedBindingRedirects.cache
+C:\Users\noname\Desktop\OOP-3sem-master\15\obj\Debug\15.csproj.CoreCompileInputs.cache
+C:\Users\noname\Desktop\OOP-3sem-master\15\obj\Debug\15.exe
+C:\Users\noname\Desktop\OOP-3sem-master\15\obj\Debug\15.pdb
