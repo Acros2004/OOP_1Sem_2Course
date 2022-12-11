@@ -1,0 +1,15 @@
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\bin\Debug\net6.0\kr2.exe
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\bin\Debug\net6.0\kr2.deps.json
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\bin\Debug\net6.0\kr2.runtimeconfig.json
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\bin\Debug\net6.0\kr2.dll
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\bin\Debug\net6.0\kr2.pdb
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\obj\Debug\net6.0\kr2.csproj.AssemblyReference.cache
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\obj\Debug\net6.0\kr2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\obj\Debug\net6.0\kr2.AssemblyInfoInputs.cache
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\obj\Debug\net6.0\kr2.AssemblyInfo.cs
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\obj\Debug\net6.0\kr2.csproj.CoreCompileInputs.cache
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\obj\Debug\net6.0\kr2.dll
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\obj\Debug\net6.0\refint\kr2.dll
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\obj\Debug\net6.0\kr2.pdb
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\obj\Debug\net6.0\kr2.genruntimeconfig.cache
+C:\Users\noname\Desktop\123\OOP\kr2\kr2\obj\Debug\net6.0\ref\kr2.dll
