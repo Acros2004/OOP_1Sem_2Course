@@ -5,6 +5,10 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14", "14.csproj", "{73AD214B-244A-4C87-8DC5-F60CBDED5E8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTube", "YouTube\YouTube.csproj", "{FB770D3F-A374-4FB2-9358-A86990843EA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car", "Car\Car.csproj", "{6606B570-0AB7-4DFA-8C83-54934E70F446}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{73AD214B-244A-4C87-8DC5-F60CBDED5E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73AD214B-244A-4C87-8DC5-F60CBDED5E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73AD214B-244A-4C87-8DC5-F60CBDED5E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB770D3F-A374-4FB2-9358-A86990843EA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB770D3F-A374-4FB2-9358-A86990843EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB770D3F-A374-4FB2-9358-A86990843EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB770D3F-A374-4FB2-9358-A86990843EA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6606B570-0AB7-4DFA-8C83-54934E70F446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6606B570-0AB7-4DFA-8C83-54934E70F446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6606B570-0AB7-4DFA-8C83-54934E70F446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6606B570-0AB7-4DFA-8C83-54934E70F446}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

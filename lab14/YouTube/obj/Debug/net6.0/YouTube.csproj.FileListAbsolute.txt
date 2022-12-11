@@ -1,0 +1,15 @@
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\bin\Debug\net6.0\YouTube.exe
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\bin\Debug\net6.0\YouTube.deps.json
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\bin\Debug\net6.0\YouTube.runtimeconfig.json
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\bin\Debug\net6.0\YouTube.dll
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\bin\Debug\net6.0\YouTube.pdb
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\obj\Debug\net6.0\YouTube.csproj.AssemblyReference.cache
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\obj\Debug\net6.0\YouTube.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\obj\Debug\net6.0\YouTube.AssemblyInfoInputs.cache
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\obj\Debug\net6.0\YouTube.AssemblyInfo.cs
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\obj\Debug\net6.0\YouTube.csproj.CoreCompileInputs.cache
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\obj\Debug\net6.0\YouTube.dll
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\obj\Debug\net6.0\refint\YouTube.dll
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\obj\Debug\net6.0\YouTube.pdb
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\obj\Debug\net6.0\YouTube.genruntimeconfig.cache
+C:\Users\noname\Desktop\123\OOP\lab14\YouTube\obj\Debug\net6.0\ref\YouTube.dll
