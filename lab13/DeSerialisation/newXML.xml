@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Documents>
+  <document name="Kvitancia">
+    <amount>80</amount>
+    <signa>false</signa>
+  </document>
+  <document name="Check">
+    <amount>10</amount>
+    <signa>true</signa>
+  </document>
+</Documents>

@@ -1,0 +1,8 @@
+C:\Users\noname\Desktop\123\OOP\lab14\bin\Debug\15.exe.config
+C:\Users\noname\Desktop\123\OOP\lab14\bin\Debug\15.exe
+C:\Users\noname\Desktop\123\OOP\lab14\bin\Debug\15.pdb
+C:\Users\noname\Desktop\123\OOP\lab14\obj\Debug\14.csproj.AssemblyReference.cache
+C:\Users\noname\Desktop\123\OOP\lab14\obj\Debug\14.csproj.SuggestedBindingRedirects.cache
+C:\Users\noname\Desktop\123\OOP\lab14\obj\Debug\14.csproj.CoreCompileInputs.cache
+C:\Users\noname\Desktop\123\OOP\lab14\obj\Debug\15.exe
+C:\Users\noname\Desktop\123\OOP\lab14\obj\Debug\15.pdb

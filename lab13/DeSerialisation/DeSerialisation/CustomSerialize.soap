@@ -1,0 +1,27 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/clr/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <SOAP-ENV:Body>
+    <SOAP-ENC:Array id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/DeSerialisation/DeSerialisation%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull" SOAP-ENC:arrayType="a1:Kvitant[3]">
+      <item href="#ref-2" />
+      <item href="#ref-3" />
+      <item href="#ref-4" />
+    </SOAP-ENC:Array>
+    <a1:Kvitant id="ref-2" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/DeSerialisation/DeSerialisation%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+      <sign>false</sign>
+      <_x003C_Fine_x003E_k__BackingField>313131</_x003C_Fine_x003E_k__BackingField>
+      <_x003C_Sum_x003E_k__BackingField>11</_x003C_Sum_x003E_k__BackingField>
+      <Document_x002B__x003C_TypeDocument_x003E_k__BackingField id="ref-5">Квитанция</Document_x002B__x003C_TypeDocument_x003E_k__BackingField>
+    </a1:Kvitant>
+    <a1:Kvitant id="ref-3" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/DeSerialisation/DeSerialisation%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+      <sign>false</sign>
+      <_x003C_Fine_x003E_k__BackingField>111111</_x003C_Fine_x003E_k__BackingField>
+      <_x003C_Sum_x003E_k__BackingField>12</_x003C_Sum_x003E_k__BackingField>
+      <Document_x002B__x003C_TypeDocument_x003E_k__BackingField href="#ref-5" />
+    </a1:Kvitant>
+    <a1:Kvitant id="ref-4" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/DeSerialisation/DeSerialisation%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+      <sign>false</sign>
+      <_x003C_Fine_x003E_k__BackingField>1222333</_x003C_Fine_x003E_k__BackingField>
+      <_x003C_Sum_x003E_k__BackingField>24</_x003C_Sum_x003E_k__BackingField>
+      <Document_x002B__x003C_TypeDocument_x003E_k__BackingField href="#ref-5" />
+    </a1:Kvitant>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

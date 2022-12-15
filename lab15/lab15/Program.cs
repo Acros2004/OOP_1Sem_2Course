@@ -33,7 +33,7 @@ namespace lab15
                 sw.Start();
                 Task task = new Task(() => MulByVector(10000000));
                 task.Start();
-                Console.WriteLine($"id: {task.Id}, статус: {task.Status}");
+                //Console.WriteLine($"id: {task.Id}, статус: {task.Status}");
                 task.Wait();
                 Console.WriteLine($"id: {task.Id}, статус: {task.Status}");
                 sw.Stop();
@@ -41,17 +41,17 @@ namespace lab15
                 Console.WriteLine();
             }
         }
-        //static void MulByVector(int k)
-        //{
-        //    Random random = new Random();
-        //    List<int> vector = new List<int>();
-        //    for (int i = 0; i < k; i++)
-        //    {
-        //        vector.Add(random.Next(1, 10));
-        //    }
-        //    vector = vector.Select(x => x * 10).ToList();
+        static void MulByVector(int k)
+        {
+            Random random = new Random();
+            List<int> vector = new List<int>();
+            for (int i = 0; i < k; i++)
+            {
+                vector.Add(random.Next(1, 10));
+            }
+            vector = vector.Select(x => x * 10).ToList();
 
-        //}
+        }
         static void MulByVector2(int k)
         {
             Random random = new Random();

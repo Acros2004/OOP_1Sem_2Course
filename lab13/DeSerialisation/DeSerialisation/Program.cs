@@ -53,7 +53,7 @@ namespace DeSerialisation
 
             findXMLTegs(@"C:\Users\noname\Desktop\123\OOP\lab13\DeSerialisation\XML.xml");
             Console.WriteLine("========================================");
-            LinqToXML(@"C:\Users\noname\Desktop\Lab_13\Lab_13\Lab_13\newXML.xml");
+            LinqToXML(@"C:\Users\noname\Desktop\123\OOP\lab13\DeSerialisation\newXML.xml");
 
 
 
