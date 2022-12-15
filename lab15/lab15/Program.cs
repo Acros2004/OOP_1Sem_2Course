@@ -33,7 +33,7 @@ namespace lab15
                 sw.Start();
                 Task task = new Task(() => MulByVector(10000000));
                 task.Start();
-                //Console.WriteLine($"id: {task.Id}, статус: {task.Status}");
+                Console.WriteLine($"id: {task.Id}, статус: {task.Status}");
                 task.Wait();
                 Console.WriteLine($"id: {task.Id}, статус: {task.Status}");
                 sw.Stop();
