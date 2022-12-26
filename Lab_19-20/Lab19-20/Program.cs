@@ -25,7 +25,7 @@ namespace Lab19_20
             Console.WriteLine("\n---- State ----");
             client.MakeOrder(flight);
 
-           // Console.WriteLine("\n---- Command ----");
+            Console.WriteLine("\n---- Command ----");
             Flight flight1 = new Flight(4, "Барселона", "Берлин", new DateTime(2023, 1, 15, 1, 01, 00), "Boeing 737", 214, 230);
             Admin admin = new Admin();
             admin.SetCommand(new FlightOnCommand(flight1));
