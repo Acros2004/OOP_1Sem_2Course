@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\noname\\Desktop\\Новая папка (6)\\Lab_17-18\\Lab_17-18\\Lab_17-18\\Lab_17-18.csproj": {}
+    "C:\\Users\\noname\\Desktop\\123\\OOP\\Lab_17-18\\Lab_17-18\\Lab_17-18\\Lab_17-18.csproj": {}
   },
   "projects": {
-    "C:\\Users\\noname\\Desktop\\Новая папка (6)\\Lab_17-18\\Lab_17-18\\Lab_17-18\\Lab_17-18.csproj": {
+    "C:\\Users\\noname\\Desktop\\123\\OOP\\Lab_17-18\\Lab_17-18\\Lab_17-18\\Lab_17-18.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\noname\\Desktop\\Новая папка (6)\\Lab_17-18\\Lab_17-18\\Lab_17-18\\Lab_17-18.csproj",
+        "projectUniqueName": "C:\\Users\\noname\\Desktop\\123\\OOP\\Lab_17-18\\Lab_17-18\\Lab_17-18\\Lab_17-18.csproj",
         "projectName": "Lab_17-18",
-        "projectPath": "C:\\Users\\noname\\Desktop\\Новая папка (6)\\Lab_17-18\\Lab_17-18\\Lab_17-18\\Lab_17-18.csproj",
+        "projectPath": "C:\\Users\\noname\\Desktop\\123\\OOP\\Lab_17-18\\Lab_17-18\\Lab_17-18\\Lab_17-18.csproj",
         "packagesPath": "C:\\Users\\noname\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\noname\\Desktop\\Новая папка (6)\\Lab_17-18\\Lab_17-18\\Lab_17-18\\obj\\",
+        "outputPath": "C:\\Users\\noname\\Desktop\\123\\OOP\\Lab_17-18\\Lab_17-18\\Lab_17-18\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\noname\\AppData\\Roaming\\NuGet\\NuGet.Config",
