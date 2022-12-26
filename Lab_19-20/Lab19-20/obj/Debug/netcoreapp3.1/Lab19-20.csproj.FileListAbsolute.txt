@@ -1,0 +1,14 @@
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\bin\Debug\netcoreapp3.1\Lab19-20.exe
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\bin\Debug\netcoreapp3.1\Lab19-20.deps.json
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\bin\Debug\netcoreapp3.1\Lab19-20.runtimeconfig.json
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\bin\Debug\netcoreapp3.1\Lab19-20.runtimeconfig.dev.json
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\bin\Debug\netcoreapp3.1\Lab19-20.dll
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\bin\Debug\netcoreapp3.1\Lab19-20.pdb
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\obj\Debug\netcoreapp3.1\Lab19-20.csproj.AssemblyReference.cache
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\obj\Debug\netcoreapp3.1\Lab19-20.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\obj\Debug\netcoreapp3.1\Lab19-20.AssemblyInfoInputs.cache
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\obj\Debug\netcoreapp3.1\Lab19-20.AssemblyInfo.cs
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\obj\Debug\netcoreapp3.1\Lab19-20.csproj.CoreCompileInputs.cache
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\obj\Debug\netcoreapp3.1\Lab19-20.dll
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\obj\Debug\netcoreapp3.1\Lab19-20.pdb
+C:\Users\noname\Desktop\123\OOP\Lab_19-20\Lab19-20\obj\Debug\netcoreapp3.1\Lab19-20.genruntimeconfig.cache
