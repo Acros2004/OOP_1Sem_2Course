@@ -14,6 +14,7 @@ namespace lab15
     class Program
     {
         static CancellationTokenSource cancellation = new CancellationTokenSource();
+        static CancellationTokenSource tokenSource_2 = new CancellationTokenSource();
         static void Main(string[] args)
         {
             First();
@@ -177,8 +178,9 @@ namespace lab15
         }
         static void Seven()
         {
-            CancellationTokenSource tokenSource_2 = new CancellationTokenSource();
+           
             BlockingCollection<string> bc = new BlockingCollection<string>(5);
+            
 
             Task[] sellers = new Task[5]
             {
@@ -203,13 +205,24 @@ namespace lab15
                 new Task(() => { while(true){ Thread.Sleep(6000);   bc.Take(); if(tokenSource_2.Token.IsCancellationRequested) return;} }, tokenSource_2.Token)
             };
 
+            int countint = 0;
             foreach (var item in sellers)
                 if (item.Status != TaskStatus.Running)
+                {
+                   
                     item.Start();
+                   
+                }
+                    
 
             foreach (var item in consumers)
                 if (item.Status != TaskStatus.Running)
+                {
+                   
                     item.Start();
+                   
+                }
+                   
 
             Task task7 = new Task(() =>
             {
@@ -218,13 +231,21 @@ namespace lab15
                 {
                     if (bc.Count != count && bc.Count != 0)
                     {
+                        
                         count = bc.Count;
 
                         Console.Clear();
                         Console.WriteLine("--------------- Склад ---------------");
 
                         foreach (var item in bc)
+                        {
+                            //countint++;
                             Console.WriteLine(item);
+                            if (countint >= 15)
+                                tokenSource_2.Cancel();
+
+                        }
+                           
 
                         Thread.Sleep(400);
 

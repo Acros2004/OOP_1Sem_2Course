@@ -1,0 +1,30 @@
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\bin\Debug\net6.0\Lab_17-18.exe
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\bin\Debug\net6.0\Lab_17-18.deps.json
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\bin\Debug\net6.0\Lab_17-18.runtimeconfig.json
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\bin\Debug\net6.0\Lab_17-18.dll
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\bin\Debug\net6.0\Lab_17-18.pdb
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.csproj.AssemblyReference.cache
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.AssemblyInfoInputs.cache
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.AssemblyInfo.cs
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.csproj.CoreCompileInputs.cache
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.dll
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\refint\Lab_17-18.dll
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.pdb
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.genruntimeconfig.cache
+C:\Users\Илья\Desktop\Пацей\ООП\Labs\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\ref\Lab_17-18.dll
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\bin\Debug\net6.0\Lab_17-18.exe
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\bin\Debug\net6.0\Lab_17-18.deps.json
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\bin\Debug\net6.0\Lab_17-18.runtimeconfig.json
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\bin\Debug\net6.0\Lab_17-18.dll
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\bin\Debug\net6.0\Lab_17-18.pdb
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.csproj.AssemblyReference.cache
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.AssemblyInfoInputs.cache
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.AssemblyInfo.cs
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.csproj.CoreCompileInputs.cache
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.dll
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\refint\Lab_17-18.dll
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.pdb
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\Lab_17-18.genruntimeconfig.cache
+C:\Users\noname\Desktop\Новая папка (6)\Lab_17-18\Lab_17-18\Lab_17-18\obj\Debug\net6.0\ref\Lab_17-18.dll
